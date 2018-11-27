@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="style_list_to_do.css">
+</head>
+<style type="text/css">
+	/*thêm khung viền cho bên ngoài bo*/
+	*{
+		box-sizing: border-box;
+	}
+	/*loại bỏ margin và padding của thẻ danh sách*/
+	ul{
+		margin: 0;
+		padding: 0
+	}
+	/*thêm kiểu cho các item trong danh sách*/
+	ul li{
+		cursor: pointer;/*khi đưa con trỏ vào nó trở thành con trỏ*/
+		position: relative;/*chọn thẻ này làm cha */
+		padding: 12px 8px 12px 40px;/*trên trái dưới phải*/
+		background: #eee;
+		font-size: 20px;
+		transition: 0,5s;
+		/* làm cho các mục trong danh sách không được chọn*/
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select: none;
+	}
+</style>
+<body>
+	<!-- <div id="myDIV" class="header">
+	  <h2>My To Do List</h2>
+	  <input type="text" id="myInput" placeholder="Title...">
+	  <span onclick="newElement()" class="addBtn">Add</span>
+	</div>
+
+	<ul id="myUL">
+	  <li>Đi tập Gym</li>
+	  <li class="checked">Đá bóng</li>
+	  <li>Nấu cơm</li>
+	  <li>Rửa bát</li>
+	  <li>Đọc sách</li>
+	  <li>Đi ngủ</li>
+	</ul> -->
+	<div class="header" id="div_add">
+		<h2>Danh sách công việc làm trong hôm nay</h2>
+		<input type="text"  id="text_box_add" placeholder="Nhập công việc cần thêm...">
+		<span onclick="newElement()" class="addBtn">Thêm Vào</span>
+	</div>
+
+	<ul id="list_work">
+		<li>đi tập gym </li>
+		<li class="checked">đá bóng</li>
+		<li>nấu cơm</li>
+		<li>rửa bát</li>
+		<li>đọc sách</li>
+		<li>đi ngut thôi</li>
+	</ul>
+
+</body>
+</html>

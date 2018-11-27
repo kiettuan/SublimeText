@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu_icon</title>
+</head>
+<style type="text/css">
+	.menu_normal{
+		width: 100px;
+		display: inline-block;
+	}
+	.menu_normal .each_bar {
+		width: 35px;
+		height: 5px;
+		background: black;
+		margin: 6px 0;
+		display: block;
+		
+	}
+	.menu_animated{
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.menu_animated .bar{
+		width: 35px;
+		height: 5px;
+		background: black;
+		margin: 6px 0;
+		transition: 1s;
+	}
+	/*rotate first bar1 - quay cái id bar1 trước*/
+	.change #bar1{
+		-webkit-transform: rotate(-45deg) translate(-9px,6px); 
+		transform: rotate(-45deg) translate(-9px,6px);
+	}
+	/*hide #bar2 - a*/
+	.change #bar2{
+	opacity: 0;		
+	}
+	.change #bar3{
+		-webkit-transform:rotate(45deg) translate(-8,-8);
+		transform: rotate(45deg) translate(-8,-8);
+	}
+</style>
+<body>
+	<div class="menu_normal">
+		<div class="each_bar"></div>
+		<div class="each_bar"></div>
+		<div class="each_bar"></div>
+	</div>
+	<div class="menu_animated" onclick="click(this)">
+		<div class="bar" id="bar1"></div>
+		<div class="bar" id="bar2"></div>
+		<div class="bar" id="bar3"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	function click(arg) {
+		arg.classList.toggle("change");
+	}
+</script>
+</html>

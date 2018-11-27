@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Jquery append</title>
+</head>
+<style type="text/css">
+	.add{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+	.add div{
+		width: 25%;
+		float: left;
+		display: inline-block;
+	}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$(".click_append").click(function(){
+				$(".append").prepend('<p> tag added 1</p>');
+		});
+			$(".click_prepend").click(function(){
+				$(".prepend").append('<p> tag added 2</p>');
+		});
+				$(".click_before").click(function(){
+			$(".before").before('<p> tag added 3</p>');
+		});
+						$(".click_after").click(function(){
+			$(".after").after('<p> tag added 4</p>');
+		});
+	})
+</script>
+
+<body>
+<div class="add">
+	<div class="append">
+		<p>this is tag p</p><br>
+		<button class="click_append">Click then append</button>
+	</div>
+	<div class="prepend">
+		<p>this is tag p</p><br>
+		<button class="click_prepend">Click then prepend</button>
+	</div>
+	<div class="before">
+		<p>this is tag p</p><br>
+		<button class="click_before">Click then add before</button>
+	</div>
+	<div class="after">
+		<p>this is tag p</p><br>
+		<button class="click_after">Click then add after</button>
+	</div>
+</div>
+</body>
+</html>

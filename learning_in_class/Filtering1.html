@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".first p").first().css({'background':'lightgray'});
+    $(".last p").last().css({'background':'lightgray'});
+    $(".eq p").eq(2).css({'background':'lightgray'});
+    $(".filter p").filter('.search').css({'background':'lightgray'});
+    $(".not p").not('.search').css({'background':'lightgray'});
+});
+</script>
+<style>
+body{
+	width: 100%;
+	overflow: hidden;
+}
+div{
+	width: 15%;
+	float: left;
+	margin: 20px;
+}
+h1{
+	text-align: center;
+}
+p{
+
+border:1px solid black}
+</style>
+
+</head>
+<body>
+<div class="first">
+	<h1>first</h1>
+<p>First paragraph.</p>
+<p>Second paragraph.</p>
+<p>Third paragraph.</p>
+<p>Last paragraph.</p>
+</div>
+<div class="last">
+	<h1>last</h1>
+<p>First paragraph.</p>
+<p>Second paragraph.</p>
+<p>Third paragraph.</p>
+<p>Last paragraph.</p>
+
+</div>
+<div class="eq">
+<h1>eq</h1>
+<p>First paragraph.0</p>
+<p>Second paragraph.1</p>
+<p>Third paragraph.2</p>
+<p>Last paragraph.3</p>
+</div>
+<div class="filter">
+	<h1>filer</h1>
+<p>First paragraph.</p>
+<p class="search">Second paragraph.</p>
+<p class="search">Third paragraph.</p>
+<p>Last paragraph.</p>
+</div>
+<div class="not">
+	<h1>not</h1>
+<p>First paragraph.</p>
+<p class="search">Second paragraph.</p>
+<p class="search">Third paragraph.</p>
+<p>Last paragraph.</p>
+</div>
+</body>
+</html>

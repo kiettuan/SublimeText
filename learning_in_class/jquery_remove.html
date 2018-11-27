@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            	$(document).ready(function(){
+            		$(".click_remove").on("click",function(){
+            			$(".remove").remove();
+            			$(".left").css({"background":"red"});
+            		});
+            		$(".click_empty").click(function(){
+            			$(".empty").empty();
+            			$(".right").css({"background":"lightblue"});
+            		})
+            	})
+            </script>
+            <style type="text/css">
+            	.Remove{
+            		width: 100%;
+            		margin: 0;
+            		padding: 0;
+
+            	}
+            	.Remove div{
+            		width: 50%;
+            		float: left;
+            		display: inline-block;
+            		
+            	}
+
+            </style>
+
+<body>
+
+<div class="Remove">
+	<div class="left">
+		<p>Red</p>
+		<div class="remove">
+			<p>Xóa sạch cả thẻ remove đi.</p>
+			<button class="click_remove"> Remove</button>
+		</div>
+	</div>
+	<div class="right">
+		<p>blue</p>
+		<div class="empty">
+			<p>Xóa hết tất cả những gì trong empty.</p>
+			<button class="click_empty">Empty</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

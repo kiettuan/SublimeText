@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show href</title>
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').on('click',function(){
+			alert('href là:'+$('#fb').attr('title'));
+		})
+	})
+</script>
+<body>
+	<a href="https://www.facebook.com" id="fb" title="chào ngày mới" >facebook.com</a>
+	<button>Show Href </button>
+</body>
+</html>

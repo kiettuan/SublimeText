@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery show hide</title>
+</head>
+<script type="text/javascript" 
+src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.hide').on('click',function(e){
+			e.preventDefault();
+			$('.test').hide();
+		});
+		$('.show').on('click',function(e){
+			e.preventDefault();
+			$('.test').show();
+		})
+
+	})
+</script>
+<body>
+<a href="https://www.facebook.com" target="_blank" class="hide"> Ẩn</a><br>
+<a href="https://www.facebook.com" target="_blank" class="show"> Hiện</a>
+<p class="test">
+	hello every body!@@@@@.
+</p>
+
+</body>
+</html>

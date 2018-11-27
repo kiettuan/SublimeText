@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data</title>
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('select').change(function(){
+	
+			var state=$(this).attr('data-state');
+			alert('dasd'+state);
+		})
+	})
+</script>
+<body>
+<form name="register">
+	<label>Place: </label>
+	<select name="place">
+		<option value="1" data-state="mien bac" data-abc="A">ha noi</option>
+		<option value="2" data-state="mien bac" data-abc="B">bac giang</option>
+		<option value="3" data-state="mien trung" data-abc="C">bac ninh</option>
+		<option value="4" data-state="mien nam" data-abc="D">hai phong</option>
+		<option value="5" data-state="mien nam" data-abc="E">hai duong</option>
+
+	</select>
+</form>
+</body>
+</html>

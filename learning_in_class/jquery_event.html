@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery event</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            	$(document).ready(function(){
+            		$('a#click').on('click',function(e){
+            			e.preventDefault();
+            			alert('bạn vừa click 1 lần');
+            		});
+            		$('a#doubleclick').on('click',function(e){
+            			e.preventDefault();
+
+            		});
+            		$('a#doubleclick').on('dblclick',function(e){
+            			e.preventDefault();
+            			alert('doubleclick dsaf');
+            		})
+            		$('.p').on('mouseenter',function(){
+            			$(this).css({'color':'red'});
+            		})
+            		$('.p').on('mouseleave',function(){
+            			$(this).css({'color':'black'});
+            		})
+
+            	})
+            </script>
+<body>
+<a href="https://www.w3schools.com" target="_blank" id="click">click</a><br>
+<a href="https://www.w3schools.com	" target="_blank" id="doubleclick">Double Click</a>
+<p class="p">p1</p>
+<p class="p">p2</p>
+<p class="p">p3</p>
+</body>
+
+</html>

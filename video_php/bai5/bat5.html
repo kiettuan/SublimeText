@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 5 phân trang</title>
+</head>
+<style type="text/css">
+	.content{
+		width: 800px;
+		height: 200px;
+		margin: 20px auto;
+		text-align: center;
+		overflow: hidden;
+	}
+	.content a{
+		width: 100px;
+		height: 50px;
+		color: black;
+		font-family: sans-serif;
+		font-size: 30px;
+		line-height: 50px;
+		float: left;
+		display: inline-block;
+		border: 1px solid #dfdf;
+		text-decoration: none;
+		list-style-type: none;
+	}
+</style>
+<body>
+
+<div class="content">
+	<a href="pagination?page=1">1</a>
+	<a href="pagination?page=2">2</a>
+	<a href="pagination?page=3">3</a>
+	<a href="pagination?page=4">4</a>
+	<a href="pagination?page=5">5</a>
+	<a href="#">next</a><br>
+	
+</div>
+<h2 style="text-align: center;">Bạn đang ở trang thứ <?php echo $page; ?></h2>
+<?php 
+	$page= (isset($_GET['page'])==true)?$_GET['page']:0;
+ ?>
+
+</body>
+</html>

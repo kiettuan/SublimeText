@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get and set</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var text;
+	var val;
+	$(document).ready(function(){
+		$('.p').on('click',function(e){
+			// e.preventDefault();
+			text=$('#p1').text();
+			console.log(text);
+		})
+		$('.a2').on('click',function(){
+			val=$('.input').val();
+			console.log(val);
+		})
+	})
+</script>
+<body>
+<p id="p1">Nội dung thẻ p </p><button class="p">click</button><br>
+<a href="#" >Nội dung thẻ a</a><br><button class="a">click</button><br>
+<input type="text" class="input" name="username" width="300px"><br><button class="a2">click</button><br>
+<textarea class="textarea"></textarea>
+
+</body>
+</html>

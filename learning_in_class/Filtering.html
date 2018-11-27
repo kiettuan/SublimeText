@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitering</title>
+</head>
+<style type="text/css">
+	body{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	div{
+		float: left;
+		width: 14%;
+	
+	}
+
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.siblings').siblings().css({"color": "red", "border": "2px solid red"});
+	})
+</script>
+<body>
+<div  title="siblings"><div>siblings</div>
+	<div class="siblings">(parent)
+  <p>p</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <p>p</p>
+</div>
+</div>
+<div class="next" title="next"><div>next
+</div></div>
+<div class="nextAll" title="nextAll"><div>nextAll</div></div>
+<div class="nextUntil" title="nextUntil"><div>nextAll</div></div>
+<div class="prev" title="prev"><div>prev</div></div>
+<div class="prevAll" title="prevAll"><div>prevAll</div></div>
+<div class="prevUntil" title="prevUntil"><div>prevUntil</div></div>
+</body>
+</html>

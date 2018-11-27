@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery selector</title>
+</head>
+<script type="text/javascript" 
+src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.p1').css({'color':'red'});
+		$('#p2').css({'color':'green'});
+		$('div').css({'color':'blue'});
+	})
+</script>
+<body>
+<p class="p1">p1</p>
+<p id="p2">p2</p>
+<div>div</div>
+</body>
+</html>

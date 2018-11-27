@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Full page tab</title>
+	<link rel="shortcut icon" type="text/css" href="ima ges/lol_icon.png">
+</head>
+<style type="text/css">
+	body{
+		font-family: "Lato",sans-serif;
+	}
+	.tablink{
+		background-color: #555;
+		border: none;
+		float: left;
+		width: 25%;
+		padding: 14px 16px;
+		cursor: pointer;
+		font-size: 16px;
+		color: white;
+		height: 50px;
+	}
+	.tabcontent{
+		height: 400px;
+		color: white;
+		padding: 100px 20px;
+		display: none;
+	}
+	.tablink:hover{
+		background-color: #777;
+	}
+	#Home{background-color: orange}
+	#News{background-color: pink}
+	#Contact{background-color: lightblue}
+	#About{background-color: green}
+</style>
+<body>
+	<p>Choose what you like</p>
+<button class="tablink" onclick="clickhere('Home',this,'orange')">Home</button>
+<button class="tablink" onclick="clickhere('News',this,'pink')">News</button>
+<button class="tablink" onclick="clickhere('Contact',this,'lightblue')">Contact</button>
+<button class="tablink" onclick="clickhere('About',this,'green')">About</button>
+
+<div class="tabcontent" id="Home">
+	<h1>Trang chu cua 1 trang web</h1>
+	<p>Tuấn đẹp trai</p>
+</div>
+<div class="tabcontent" id="News">
+	<h1>Tin tức hiện hành thể hiện ở đây</h1>
+	<p> Tuấn đẹp trai vô đối</p>
+</div>
+<div class="tabcontent" id="Contact" >
+	<h1>Fellback</h1>
+	<p>Tuấn đẹp trai lắm</p>
+</div>
+<div class="tabcontent" id="About">
+	<h1> About Information</h1>
+	<p>Tuấn rất đẹp trai</p>
+</div>
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parent</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            	$(document).ready(function(){
+            		$(".btn1").click(function(){
+            			$(".chau1").parent().css({"border":"1px solid red"})
+            		})
+            		$(".btn2").click(function(){
+            			$(".chau2").parents().css({"border":"1px solid red"})
+            		})
+            	})
+            </script>
+<body>
+<div class="swapper">
+	<div class="left">
+		<div class="ong1">
+			<p>ông</p>
+			<div class="bo1">
+				<p>bố</p>
+				<div class="chau1"><p>cháu</p></div>
+			</div>
+		</div>
+		<button class="btn1">Tới mức trên nó</button>
+	</div>
+	<div class="light">
+		<div class="ong2">
+			<p>ông</p>
+			<div class="bo2">
+				<p>Bố</p>
+				<div class="chau2">
+					<p>cháu</p>
+				</div>
+			</div>
+		</div>
+		<button class="btn2">Tới mức chỉ định trước nó</button>
+	</div>
+</div>
+</body>
+</html>

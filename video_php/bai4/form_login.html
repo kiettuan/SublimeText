@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>login</title>
+</head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+<link rel="stylesheet" type="text/css" href="style_login.css">
+<body>
+<div class="login">
+  <div class="heading">
+    <h2>Sign in</h2>
+    <form action="process.php" method="post" name="form-main">
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control" placeholder="Username or email"  name="login">
+          </div>
+
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <input type="password" class="form-control" placeholder="Password" name="pass">
+        </div>
+
+        <input type="submit" name="commit" value="login" >
+       </form>
+    </div>
+ </div>
+</body>
+</html>

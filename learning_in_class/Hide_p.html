@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+<p>Nếu nhấn nút "Ẩn" thì đoạn văn bản sẽ biến mất --- dammio.com</p>
+<button id="hide">Ẩn</button>
+<button id="show">Hiện</button>
+</body>
+</html>
